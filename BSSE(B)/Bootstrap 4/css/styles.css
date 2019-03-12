@@ -1,0 +1,4090 @@
+﻿/*====================== Font Families =======================*/
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../../Fonts/Raleway-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('../../Fonts/Raleway-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../../Fonts/Raleway-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans2 SemiBold';
+    src: url('../../Fonts/HurmeGeometricSans2 SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Caturrita Medium';
+    src: url('../../Fonts/Caturrita Medium.otf') format('opentype');
+}
+
+a:hover {
+    color: inherit;
+}
+
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+/*=================== Slider Section Styling ===================*/
+.mySlides {
+    display: none
+}
+
+.slideshow-div {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 94%;
+    width: auto;
+    padding: 14px 0;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 9%;
+}
+
+.next {
+    right: 79%;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 132px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #191a1c;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 91%;
+    left: 11.95%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+/*=================== Header Section Styling ===================*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.bg-slide-img {
+    background-image: url('../../Images/main-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.comments-space {
+    width: 100%;
+    min-height: 50px;
+    text-align: justify;
+}
+
+.remaining-contents span {
+    display: none;
+}
+
+.nav-trans {
+    transition: padding 400ms linear;
+}
+
+.pt-45 {
+    padding-top: 45px !important;
+}
+
+/*============ Nav Bar Styling ===========*/
+.link-padding {
+    padding: 20px 0 20px;
+}
+
+
+.nav-active {
+    color: #005daa !important;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+    .nav-active::after {
+        content: "";
+        background: #005daa;
+        position: absolute;
+        width: 45%;
+        height: 5%;
+        left: 30px;
+        bottom: 0;
+    }
+
+
+
+.nav-color {
+    background-color: rgba(244,244,244,.9);
+    opacity: .7;
+}
+
+.navbar-brand {
+    margin-right: 0;
+}
+
+    .navbar-brand .logoimage1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-brand .logo1.scrolled {
+        margin-top: 0;
+        max-width: 81%;
+        color: #ffffff;
+        transition: width 400ms linear;
+    }
+
+.nav-item {
+    position: relative;
+    padding: 8px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.702);
+}
+
+    .navbar.scrolled {
+        background-color: #000000 !important;
+        opacity: 1;
+    }
+
+.nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #1e1e1e;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.3s,background-color 0.1s,padding 0.2s ease-in;
+}
+
+.navbar-nav.scrolled {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+/*NavAr Satylain*/
+.carousel-caption {
+    position: absolute;
+    right: 20%;
+    bottom: 320px;
+    left: 8%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+    .link-style:hover {
+        text-decoration: none;
+        color: #5c5c5c;
+    }
+
+.fa-color {
+    color: #1f2020;
+}
+
+.carousel-control-prev {
+    top: 89%;
+    left: 7%;
+}
+
+.carousel-control-next {
+    top: 89%;
+    right: 68%;
+}
+
+.count-setting {
+    color: #1f2020;
+    top: 95.5%;
+    left: 18.5%;
+}
+
+.slider-pera-text {
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.end {
+    text-align: end;
+}
+
+.mainheading {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Raleway-Bold', sans-serif;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+#home .banner-btn {
+    margin-top: 48px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    color: #232626;
+    font-size: 18px;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 265px;
+    height: 60px;
+    padding: 15px;
+    border: 2px solid #232626;
+}
+
+#home .button_design_1:hover {
+    background-color: #ffffff;
+    color: #232626;
+}
+
+.below-line {
+    line-height: 2em;
+    color: #ffffff;
+    font-size: 48px;
+    position: relative;
+    text-align: center;
+}
+
+    .below-line:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.medical-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    color: #005daa;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#con_detail {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: auto;
+    padding: 40px 0px 20px 0;
+}
+
+.head-font-color {
+    color: #4a4a4a;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+.desc-font-color {
+    color: #959595;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.bg-color-light {
+    background-color: #40b6d6;
+    width: 100%;
+    height: 452px;
+    padding: 55px 40px
+}
+
+.bg-color-dark {
+    background-color: #0b91cd;
+    width: 100%;
+    height: 452px;
+    padding: 55px 40px
+}
+
+.bg-color-deep {
+    background-color: #0b79cd;
+    width: 100%;
+    height: 452px;
+    padding: 55px 20px
+}
+
+.heading-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 29px;
+    color: #ffffff;
+}
+
+.none-style {
+    margin-left: -40px;
+    list-style: none;
+}
+
+.desc-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+
+.btn-more-load {
+    background: transparent;
+    color: #bae5f0;
+    border: 2px solid #bae5f0;
+    width: 140px;
+    height: 50px;
+    line-height: 34px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mercey-font-size {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #0d0d0d;
+}
+
+.mercey-desc-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+
+.bg-visit {
+    background-image: url('../../Images/bg-visit.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.doc-setting {
+    position: absolute;
+    left: 57%;
+    margin-top: 4.3%
+}
+
+.border-style {
+    border: 10px solid #bcdff2;
+    width: 100%;
+    height: auto;
+}
+
+.form-control {
+    border-color: #666666;
+    border-radius: 25px;
+    width: 280px;
+    height: 50px;
+    background: transparent;
+    padding: 5px;
+}
+
+.select-control {
+    border-color: #666666;
+    border-radius: 25px;
+    width: 280px;
+    height: 50px;
+    background: transparent;
+    padding: 5px;
+}
+
+.input-control {
+    border-color: #666666;
+    border-radius: 25px;
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    line-height: 15px;
+}
+
+::placeholder {
+    color: #666666;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+.form-control:focus {
+    color: #000;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn-confirm {
+    background-color: #0b91cd;
+    color: #ffffff;
+    font-size: 12px;
+    width: 140px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+#life {
+    background-image: url('../../Images/bg-banner-v.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 200px;
+}
+
+.sub-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.main-text {
+    font-family: 'Caturrita Medium';
+    font-weight: 500;
+    color: #fff;
+    font-size: 58px;
+}
+
+.main-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #b7d5eb;
+}
+
+.dr-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.dr-line {
+    line-height: 3rem;
+    color: #ffffff;
+    font-size: 26px;
+    position: relative;
+    text-align: center;
+}
+
+    .dr-line:after, .dr-line:before {
+        top: 50%;
+        content: '';
+        position: absolute;
+        display: block;
+        width: 5%;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+    .dr-line::before {
+        right: 76%;
+    }
+
+    .dr-line::after {
+        left: 76%;
+    }
+
+.text-shads {
+    text-shadow: 3px 3px #1c3b54;
+}
+
+.head-style {
+    font-family: 'Montserrat', sans-serif;
+    color: #8ea8bd;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.head-desc-style {
+    color: #5c5c5c;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.do-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    color: #000000;
+}
+
+#gallery {
+    background-color: #ecf5f8;
+    width: 100%;
+    height: auto;
+    padding: 90px 0 80px 0;
+}
+
+.gallery-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+}
+
+.btn-more {
+    width: 200px;
+    height: 65px;
+    background-color: #0b91cd;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-r-0 {
+    border-radius: 0px !important;
+}
+
+.doctor-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+}
+
+.respect-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #464646;
+}
+
+.card-header {
+    padding: 0rem 0rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.doc-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: #2a9fd3;
+}
+
+.special-text {
+    color: #808080;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.media-obj-text {
+    color: #404040;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-footer {
+    padding: .75rem .75rem;
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+#medical-footer {
+    background-color: #0e87bd;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px 0px 0px;
+}
+
+.subcribe-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #cacaca !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.email-input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #ffffff;
+    background: transparent;
+}
+
+.btn-submit {
+    height: 46px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+.contact-font {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.con-font {
+    font-family: 'HurmeGeometricSans2 SemiBold';
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cons-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.doc-footer {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'HurmeGeometricSans2 SemiBold';
+    font-weight: 600;
+}
+
+    .doc-footer:hover {
+        color: #1a1a1a;
+        cursor: pointer;
+    }
+
+.link-font {
+    color: #ffffff;
+    font-family: 'HurmeGeometricSans2 SemiBold';
+    font-weight: 600;
+    font-size: 18px
+}
+
+.bg-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 24px 0;
+    background-color: #0c5373;
+}
+
+.doc-img {
+    position: absolute;
+    left: 57%;
+    margin-top: 4.3%;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+    .navigation-link:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.relative-position {
+    position: relative;
+    bottom: 22.5px;
+}
+
+.what-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .what-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 135px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.gallery-line-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .gallery-line-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+.repect-below {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    position: relative;
+}
+
+    .repect-below:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 153px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin: 0 2%;
+        border: 2px solid #0b91cd;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    }
+/*=================== Custome Margins ===================*/
+.mt-300 {
+    margin-top: 300px;
+}
+
+.mt-290 {
+    margin-top: 290px;
+}
+
+.mt-280 {
+    margin-top: 280px;
+}
+
+.mt-270 {
+    margin-top: 270px;
+}
+
+.mt-260 {
+    margin-top: 260px;
+}
+
+.mt-250 {
+    margin-top: 250px;
+}
+
+.mt-240 {
+    margin-top: 240px;
+}
+
+.mt-230 {
+    margin-top: 230px;
+}
+
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+.mt-180 {
+    margin-top: 180px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mt-140 {
+    margin-top: 140px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mt-115 {
+    margin-top: 115px;
+}
+
+.mt-110 {
+    margin-top: 110px;
+}
+
+.mt-108 {
+    margin-top: 108px;
+}
+
+.mt-106 {
+    margin-top: 106px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-99 {
+    margin-top: 99px;
+}
+
+.mt-95 {
+    margin-top: 95px;
+}
+
+.mt-94 {
+    margin-top: 94px;
+}
+
+.mt-89 {
+    margin-top: 89px;
+}
+
+.mt-88 {
+    margin-top: 88px;
+}
+
+.mt-87 {
+    margin-top: 87px;
+}
+
+.mt-86 {
+    margin-top: 86px;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mt-84 {
+    margin-top: 84px;
+}
+
+.mt-83 {
+    margin-top: 83px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-65 {
+    margin-top: 65px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-55 {
+    margin-top: 55px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-44 {
+    margin-top: 44px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-38 {
+    margin-top: 38px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-34 {
+    margin-top: 34px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-27 {
+    margin-top: 27px;
+}
+
+.mt-26 {
+    margin-top: 26px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+/*=========== Margin Bottom ===========*/
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-110 {
+    margin-bottom: 110px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
+}
+
+.b-50 {
+    bottom: 50px;
+}
+
+.b-30 {
+    bottom: 30px;
+}
+/*================ Margin-Left ===================*/
+.ml-23 {
+    margin-left: 23px;
+}
+/*================ Padding-Top ===================*/
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+/*======= Some Commen Styling ======*/
+.vh-100 {
+    height: 100vh;
+}
+
+.item {
+    display: inline-block;
+}
+
+.btn-load-more {
+    font-size: 22px;
+    color: #fff;
+    background-color: #0b91cd;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    -webkit-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
+    -moz-box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
+    box-shadow: 5px 6px 2px -2px rgba(255,245,104,1);
+}
+
+    .btn-load-more:hover {
+        background-color: #0b91cd;
+    }
+
+.left-text {
+    text-align: left;
+}
+
+.mail-to-hos {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+    .mail-to-hos:hover {
+        text-decoration: none;
+        color: #4a4a4a;
+    }
+
+.mail-to-style {
+    text-decoration: none;
+    color: #000000;
+}
+
+    .mail-to-style:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+
+/*================ Media Query ===============*/
+
+@media screen and (max-width: 1024px) {
+    .select-control {
+        width: 240px;
+    }
+
+    .form-control {
+        width: 240px;
+    }
+
+    .input-control {
+        width: 120px;
+    }
+
+    .btn-confirm {
+        width: 120px;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px !important;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+    /*.media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }*/
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .media-mt-max {
+        margin-top: 0 !important;
+    }
+
+    .count-setting {
+        left: 42%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .doc-footer {
+        font-size: 15px;
+    }
+
+    .con-font {
+        font-size: 15px;
+    }
+
+    .cons-font {
+        font-size: 15px;
+    }
+
+    .medical-text {
+        font-size: 41px;
+        left: 0%;
+        margin-top: 0%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+        height: 350px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+        height: 350px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+        height: 350px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 14px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 61%;
+        margin-top: 11.3%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        content: "";
+        background: #005daa;
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        left: 10px;
+        bottom: 0;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .doc-img {
+        left: 64%;
+        margin-top: 45.3%;
+        right: 6%;
+    }
+
+    .media-con-setting {
+        margin-left: -83%;
+        margin-top: 39% !important;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 20%;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+
+
+    .cons-font {
+        font-size: 16px;
+    }
+
+    .mt-70 {
+        margin-top: 0px;
+    }
+
+    .my-mt-media {
+        margin-top: 30px;
+    }
+
+    .con-font {
+        font-size: 16px;
+    }
+
+    .doc-footer {
+        font-size: 14px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 15px;
+    }
+
+    .medical-text {
+        font-size: 30px;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .count-setting {
+        top: 95.5%;
+        left: 22%;
+    }
+
+    .carousel-control-prev {
+        left: 5%;
+    }
+
+    .carousel-control-next {
+        right: 57%;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+        height: 330px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .media-mt-load {
+        margin-top: 24px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .media-slide-icons {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbertext {
+        top: 87.8%;
+    }
+
+    .text {
+        bottom: 40px;
+    }
+
+    .next, .prev {
+        top: 93%;
+    }
+
+    .prev {
+        left: 9%;
+    }
+
+    .next {
+        right: 74%;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        content: "";
+        background: #005daa;
+        position: absolute;
+        width: 70%;
+        height: 5%;
+        left: 10px;
+        bottom: 0;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .doc-img {
+        left: 64%;
+        margin-top: 45.3%;
+        right: 6%;
+    }
+
+    .media-con-setting {
+        margin-left: -83%;
+        margin-top: 39% !important;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 20%;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+
+
+    .cons-font {
+        font-size: 16px;
+    }
+
+    .mt-70 {
+        margin-top: 0px;
+    }
+
+    .my-mt-media {
+        margin-top: 30px;
+    }
+
+    .con-font {
+        font-size: 16px;
+    }
+
+    .doc-footer {
+        font-size: 14px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px;
+    }
+
+    .medical-text {
+        font-size: 31px;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .count-setting {
+        top: 95.5%;
+        left: 22%;
+    }
+
+    .carousel-control-prev {
+        left: 5%;
+    }
+
+    .carousel-control-next {
+        right: 57%;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+        height: 330px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+        height: 300px;
+    }
+
+    .media-mt-load {
+        margin-top: 24px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .media-slide-icons {
+        margin-top: 15px;
+    }
+
+    .mt-50 {
+        margin-top: -17px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .media-h-0 {
+        height: 0%;
+    }
+
+    .text {
+        bottom: 260px;
+    }
+
+    .next, .prev {
+        top: 90%;
+    }
+
+    .next {
+        right: 64%;
+    }
+
+    .nav-active::after {
+        width: 15%;
+        left: 8px;
+    }
+
+    .dr-line::before {
+        right: 86%;
+    }
+
+    .dr-line::after {
+        left: 86%;
+    }
+
+    .media-con-mt {
+        margin-top: 20px;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    .email-input {
+        width: 379px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        top: 95.5%;
+        left: 37%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .media-width {
+        width: 85px !important;
+    }
+
+    .carousel-caption {
+        bottom: 250px;
+    }
+
+    .medical-text {
+        font-size: 40px;
+        left: 8%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 125%;
+        right: 6%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
+    }
+
+    .media-slide-icons {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    .email-input {
+        width: 379px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 40px;
+        left: 8%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 47%;
+        margin-top: 127%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
+    }
+
+    .dr-line::before {
+        right: 86%;
+    }
+
+    .dr-line::after {
+        left: 86%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    .email-input {
+        width: 343px;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 40px;
+        left: 8%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 49%;
+        margin-top: 153%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .nav-link::after {
+        width: 20%;
+    }
+
+    .nav-link::before {
+        width: 20%;
+    }
+
+    .media-slide-icons {
+        margin-top: 30px;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0%;
+    }
+
+    .media-setting {
+        margin-left: 1%;
+        margin-top: 6% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .email-input {
+        width: 329px;
+    }
+
+    .m-w-100 {
+        width: 100%;
+    }
+
+    .count-setting {
+        top: 95.5%;
+        left: 36%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .media-width {
+        width: 85px !important;
+    }
+
+    .carousel-caption {
+        bottom: 250px;
+    }
+
+    .medical-text {
+        font-size: 40px;
+        left: 8%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 163%;
+        right: 4%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .bg-footer {
+        font-size: 12px;
+    }
+}
+
+/*==================== Media Query For Land Scape Mode =====================*/
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+    .media-mt-max {
+        margin-top: 19%;
+    }
+
+    /*.doc-img {
+        margin-top: 3.6%;
+    }*/
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 65%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .carousel-caption {
+        bottom: 390px;
+    }
+
+    .media-slide-icons {
+        margin-top: 30px;
+    }
+
+    .media-con-mt {
+        margin-top: 20px;
+    }
+
+    .medical-text {
+        font-size: 34px;
+    }
+
+    .carousel-control-prev {
+        top: 89%;
+        left: 3%;
+    }
+
+    .carousel-control-next {
+        top: 89%;
+        right: 62%;
+    }
+
+    .count-setting {
+        left: 19%;
+        top: 95.5%;
+    }
+
+    .head-font-color {
+        font-size: 16px;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .heading-text {
+        font-size: 26px;
+    }
+
+    .bg-color-deep {
+        height: 452px;
+    }
+
+    .bg-color-dark {
+        height: 452px;
+    }
+
+    .bg-color-light {
+        height: 452px;
+    }
+
+    .main-text {
+        font-size: 24px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .what-below {
+        font-size: 30px;
+    }
+
+    .gallery-line-below {
+        font-size: 35px;
+    }
+
+    .repect-below {
+        font-size: 30px;
+    }
+
+    .respect-font {
+        font-size: 20px;
+    }
+
+    #life {
+        padding: 53px 80px;
+    }
+
+    .sub-text {
+        font-size: 22px;
+    }
+
+    .dr-line {
+        font-size: 22px;
+    }
+
+        .dr-line::before {
+            right: 0%;
+        }
+
+        .dr-line::after {
+            left: 0%;
+        }
+
+
+
+    .media-mt-40 {
+        margin-top: 40px;
+    }
+
+    .cons-font {
+        font-size: 15px;
+    }
+
+    .con-font {
+        font-size: 15px;
+    }
+
+    .doc-footer {
+        font-size: 15px;
+    }
+
+    .link-font {
+        font-size: 15px;
+    }
+
+    .select-control {
+        width: 190px;
+    }
+
+    .form-control {
+        width: 190px;
+    }
+
+    .input-control {
+        width: 190px;
+    }
+
+    .mercey-font-size {
+        font-size: 26px;
+    }
+
+    .media-mt-max {
+        margin-top: 0%;
+    }
+    /*.media-margin-top-30 {
+        margin-top: 0px !important;
+    }*/
+
+    .doc-img {
+        position: absolute;
+        left: 62%;
+        margin-top: 41%;
+        right: 9%;
+    }
+
+    .media-ml-20-per {
+        margin-left: 10px;
+    }
+
+    .media-setting {
+        margin-left: -77%;
+        margin-top: 35% !important;
+        width: 100%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 6%;
+    }
+
+    .bg-footer {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .my-w-100 {
+        width: 50% !important;
+    }
+
+    .carousel-caption {
+        bottom: 260px;
+    }
+
+    .media-setting {
+        margin-left: 0px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 40%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 40.5%;
+        right: 20%
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+
+    .bg-color-deep {
+        height: 265px;
+    }
+
+    .bg-color-dark {
+        height: 286px;
+    }
+
+    .bg-color-light {
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .carousel-caption {
+        bottom: 200px;
+    }
+
+    .my-w-100 {
+        width: 50% !important;
+    }
+
+    .media-setting {
+        margin-left: 0px;
+    }
+
+    .media-con-setting {
+        margin-left: 54px;
+        margin-top: 0px !important;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 40%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 48%;
+        margin-top: 40.5%;
+        right: 20%
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+
+    .bg-color-deep {
+        height: 265px;
+    }
+
+    .bg-color-dark {
+        height: 286px;
+    }
+
+    .bg-color-light {
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 731px) and (orientation: landscape) {
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0px;
+    }
+
+    .media-setting {
+        margin-left: 0%;
+        margin-top: 0% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 57%;
+        margin-top: 54.5%;
+        right: 17%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .my-w-100 {
+        width: 50% !important;
+    }
+
+    .media-setting {
+        margin-left: 0px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 53%;
+        margin-top: 54.5%;
+        right: 11%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+
+    .bg-color-deep {
+        height: 265px;
+    }
+
+    .bg-color-dark {
+        height: 286px;
+    }
+
+    .bg-color-light {
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0;
+    }
+
+    .nav-active::after {
+        width: 8%;
+        left: 12px;
+    }
+
+    .nav-link {
+        margin: 0 7px;
+    }
+
+    .nav-item {
+        padding: 0px;
+    }
+
+    .my-w-100 {
+        width: 50% !important;
+    }
+
+    .select-control {
+        width: 200px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .input-control {
+        width: 140px;
+    }
+
+    .media-ml-20-per {
+        margin-left: 0px;
+    }
+
+    .media-mt-11-per {
+        margin-top: 0px;
+    }
+
+    .media-setting {
+        margin-left: 0%;
+        margin-top: 0% !important;
+        width: 0%;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .media-ml-12-per {
+        margin-left: 0%;
+    }
+
+    #medical-footer {
+        padding: 32px 0 0 0;
+    }
+
+    .m-w-100 {
+        width: auto;
+    }
+
+    .count-setting {
+        left: 39%;
+        top: 95.5%;
+    }
+
+    .carousel-control-prev {
+        left: 18%;
+    }
+
+    .carousel-control-next {
+        right: 33%
+    }
+
+    .medical-text {
+        font-size: 42px;
+        left: 15%;
+        margin-top: 5%;
+    }
+
+    .desc-font-color {
+        font-size: 14px;
+    }
+
+    .head-font-color {
+        font-size: 14px;
+    }
+
+    .media-ml {
+        margin-left: 6%;
+    }
+
+    .mt-48 {
+        margin-top: 25px;
+    }
+
+    .mt-45 {
+        margin-top: 25px;
+    }
+
+    .bg-color-light {
+        padding: 35px 36px;
+    }
+
+    .bg-color-deep {
+        padding: 35px 36px;
+    }
+
+    .bg-color-dark {
+        padding: 35px 36px;
+    }
+
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .desc-text {
+        font-size: 14px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mercey-font-size {
+        font-size: 21px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+
+    .mercey-desc-text {
+        font-size: 14px;
+    }
+
+    .media-mt-20 {
+        margin-top: 20px;
+    }
+
+    #life {
+        padding: 0px;
+    }
+
+    .media-mt-50 {
+        margin-top: 50px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+    }
+
+    .main-text {
+        font-size: 36px;
+    }
+
+    .main-desc {
+        font-size: 16px;
+    }
+
+    .mt-65 {
+        margin-top: 34px;
+    }
+
+    .dr-line {
+        font-size: 19px;
+    }
+
+    .do-font {
+        font-size: 25px;
+    }
+
+    .mt-85 {
+        margin-top: 50px;
+    }
+
+    .doctor-font {
+        font-size: 25px;
+    }
+
+    .respect-font {
+        font-size: 16px;
+    }
+
+    .doc-name {
+        font-size: 18px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+
+    .media-obj-text {
+        font-size: 16px;
+    }
+
+    .doc-img {
+        position: absolute;
+        left: 60%;
+        margin-top: 65.5%;
+        right: 13%;
+    }
+
+    .p-4 {
+        padding: .3rem !important;
+    }
+
+    .media-margin-top-30 {
+        margin-top: 30px !important;
+    }
+
+    .media-mt-20 {
+        margin-top: 0px;
+    }
+
+    .media-mr-11 {
+        right: 11%;
+    }
+
+    .bg-footer {
+        font-size: 18px;
+    }
+}
